@@ -7,7 +7,7 @@ This can be run on any platform, but since BlueIris mostly supports windows, Im 
 
 ### Running this on Windows
 
-- Download the [pusher binary](https://github.com/fifthsegment/blueiris2slack-image-pusher/blob/main/blueiris2Slack.pusher.app.exe) from this repo and place it anywhere on your PC (as long as you remember the path)
+- Download the [pusher binary](https://github.com/fifthsegment/blueiris2slack-image-pusher/blob/main/build/blueiris2Slack.pusher.app.exe) from this repo and place it anywhere on your PC (as long as you remember the path)
 - Create a **config.json** file using the template below and place it in the directory which has the pusher binary
 - _NOTE: The first argument to the pusher binary is the location of the config.json file, without that agument, it assumes the config is in the current directory._
 - Ask BlueIris to run the binary on alerts. Example setup:
@@ -31,4 +31,13 @@ This can be run on any platform, but since BlueIris mostly supports windows, Im 
 
 ```
 LOG_LEVEL=info yarn start
+```
+
+### Build for Windows x64
+
+```
+# clone this repo
+yarn install
+yarn build:win
+# find the blueiris2Slack.pusher.app.exe file in the root directory
 ```

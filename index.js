@@ -116,6 +116,10 @@ async function main() {
           const url = await UploadFile(config, bucketId, fileName);
           if (url) {
             await pushToSlack(config, url);
+            if (config?.deleteAfterPush === "true") {
+              log.info("Deleting file " + fileName);
+              fs.unlinkSync(`${config.directoryToRead}/${fileName}`);
+            }
           }
         });
         if (files.length === 0) {

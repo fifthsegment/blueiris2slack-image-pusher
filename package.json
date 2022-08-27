@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint",
-    "buildbin": "pkg -t node16-win-x64 index.js -o blueiris2Slack.pusher.app.exe",
+    "build:win": "pkg -t node16-win-x64 index.js -o build/blueiris2Slack.pusher.app.exe",
     "prettier": "yarn prettier --write .",
     "prepare": "husky install"
   },
