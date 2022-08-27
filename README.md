@@ -1,7 +1,7 @@
 ## BlueIris 2 Slack image pusher
 
-This app allows you to push images whenever an alert is generated on BlueIris to your Slack.
-This can be run on any platform, but since BlueIris mostly supports windows, Im shipping this a windows binary.
+This app allows you to push CCTV camera images to Slack via Backblaze, whenever an alert is generated on BlueIris.
+This can be run on any platform, but since BlueIris mostly supports windows, Im shipping this with a windows binary.
 
 ### Running this on Windows
 
