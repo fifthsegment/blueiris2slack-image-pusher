@@ -103,7 +103,7 @@ async function pushToSlack  (config, url, text =  "Motion Detection Alert" ) {
 
 async function main() {
     try {
-        const config = await getConfig();
+        const config = await getConfig(process.argv.length> 2 ? process.argv[2].toString(): undefined);
         if (config) {
             b2 = buildB2(config);
             const backblaze = await b2.authorize();
@@ -116,6 +116,9 @@ async function main() {
                         await pushToSlack(config, url)
                     }
                 })
+                if (files.length === 0) {
+                    console.log("No image files in the directory")
+                }
             }
         }
     }
