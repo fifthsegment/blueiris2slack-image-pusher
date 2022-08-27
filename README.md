@@ -8,6 +8,8 @@ This can be run on any platform, but since BlueIris mostly supports windows, Im 
 - Create a config file using the template below and place it in the directory which has the pusher binary
 - Ask BlueIris to run the binary on alerts.
 
+![blueiris-setup](https://user-images.githubusercontent.com/5513549/187025589-368368d5-18d5-45ed-b1c0-082e11848d12.PNG)
+
 
 ### config.json
 ```
@@ -20,3 +22,4 @@ This can be run on any platform, but since BlueIris mostly supports windows, Im 
 }
 
 ```
+
