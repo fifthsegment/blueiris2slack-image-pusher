@@ -22,7 +22,8 @@ This can be run on any platform, but since BlueIris mostly supports windows, Im 
     "directoryToRead": "BlueIris-Image-Containing directory path",
     "applicationKeyId" : "Backblaze B2 applicationKeyId",
     "applicationKey": "Backblaze B2 applicationKey",
-    "slackWebhook" : "Slack webhook url"
+    "slackWebhook" : "Slack webhook url : string",
+    "deleteAfterPush" : "true or false (delete image after push or not)"
 }
 
 ```
