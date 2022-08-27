@@ -8,8 +8,8 @@ This can be run on any platform, but since BlueIris mostly supports windows, Im 
 ### Running this on Windows
 
 - Download the [pusher binary](https://github.com/fifthsegment/blueiris2slack-image-pusher/blob/main/blueiris2Slack.pusher.app.exe) from this repo and place it anywhere on your PC (as long as you remember the path)
-- Create a config file using the template below and place it in the directory which has the pusher binary
-- Ask BlueIris to run the binary on alerts.
+- Create a **config.json** file using the template below and place it in the directory which has the pusher binary
+- Ask BlueIris to run the binary on alerts. Example setup:
 
 ![blueiris-setup](https://user-images.githubusercontent.com/5513549/187025589-368368d5-18d5-45ed-b1c0-082e11848d12.PNG)
 
