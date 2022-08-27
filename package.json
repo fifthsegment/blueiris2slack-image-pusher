@@ -1,0 +1,14 @@
+{
+  "name": "blueiris2slack-image-pusher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "backblaze-b2": "^1.7.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "buildbin" : "pkg -t node16-win-x64 index.js -o blueiris2Slack.pusher.app.exe"
+  }
+}
