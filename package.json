@@ -5,10 +5,25 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2",
-    "backblaze-b2": "^1.7.0"
+    "backblaze-b2": "^1.7.0",
+    "log": "^6.3.1",
+    "log-node": "^8.0.3"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "scripts": {
     "start": "node index.js",
-    "buildbin" : "pkg -t node16-win-x64 index.js -o blueiris2Slack.pusher.app.exe"
+    "lint": "eslint",
+    "buildbin": "pkg -t node16-win-x64 index.js -o blueiris2Slack.pusher.app.exe",
+    "prettier": "yarn prettier --write .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
   }
 }
