@@ -1,8 +1,8 @@
 const B2 = require("backblaze-b2");
 const fs = require("fs");
 const axios = require("axios");
-require("log-node")();
 const log = require("log");
+require("log-node")();
 
 const imageExts = ["jpg", "jpeg"];
 let b2 = null;
