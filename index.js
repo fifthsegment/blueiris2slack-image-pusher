@@ -20,6 +20,7 @@ const getConfig = async (configPath="./config.json") => {
     }
     catch(e) {
         console.log("Unable to read config file at " + configPath);
+        console.log("Error", e);
         return undefined;
     }
 }
